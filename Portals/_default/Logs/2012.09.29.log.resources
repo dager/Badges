@@ -1,0 +1,16 @@
+2012-09-29 20:11:52,309 [dave-HP][Thread:45][ERROR] DotNetNuke.Framework.PageBase - ~/Default.aspx?tabid=56&error=An unexpected error has occurred&content=0
+System.Web.HttpException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: ::1
+	Port: 20392
+	User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)
+	ViewState: DJbS8og/v3wbuhi/dmy5+0bpB3JTsd9j5RVH23q87wf1oYQSsvL817ki+288s1gJrZAVohA97fVhkIFuwyAX8bja9dY+PEMIcnbkhvA0iiCLLzubPDE3SbpMkXfx/HgdjFoiyQ5rJV08r2FZBjZxieTt2LrcKyHNVJhWis2+Ha2OMKRF5EutJGgpPpo/Cwme7mruwtUOB+NOiIZTuvHldHdcugWBTalVRP/E5hJulgrMB6DUUic85owXaSKu0nsEVawk+DRHLXPoO++44JrE15O849Oe/dan/ugEJJW3i8UPJpjdPa/CeAQRtY4tmroJEcoP1phEEE69SxaQwm7USP7Y/tJdceaIiNZzh07C6wUygvQx+3qXwS5yTKoM78nHzalREYtTn3AQLuXLffRLdJvhNb0+245/rlSfYkeVTLTEnnBjiq5NE2RHZ6VbW4mVxZJ1oABtGQ2oXZQz1hLnWqfkqJ+Jaa3IDg+ER0T0VOMQj0GciauJdBfTQpRZitGxFy+x5ozJHf7whlXD2uDKr3PHvOcSoomus1alvrJkj4XV4ounR+KjyG1+YADZ4lwOqsdcqDkuEDqQsJmumAJSO84NzbAMoA0my/LIMnO+mPVB/nFMAKkda8QIuU1FzfR9dGu89coYuT4dRMlnMxXhUtDPs2yUAzip47CMC6MaHs5TaF3ErksP6BEThyk/GvLOIa9cx6D6EeVhBBHBlH3VwxRb6Y/VNTKS569eDkMjh8n/gDz+6CQlPhKmVzVukS66FV/GoM00athjaC6q4DF7zmVP79OW3RCyYMjPT9PRN5fmlsGhc49gfXxfQ6IfhKPbIgqDv+Avjoh8moxw7HurwU4FWT2KbRjuX7g/+Ne1HWnow2fbBtFkVbCmAm...
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter.Deserialize(String serializedState)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

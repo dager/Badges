@@ -1,0 +1,6 @@
+first name: badges
+last name: bullies
+username: BadgesAdmin
+password: Badg3s4!
+email: david.ager@gmail.com
+
